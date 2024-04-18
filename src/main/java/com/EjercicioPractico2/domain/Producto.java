@@ -1,5 +1,4 @@
-    package com.EjercicioPractico2.domain;
-
+package com.EjercicioPractico2.domain;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -22,7 +21,6 @@ public class Producto implements Serializable {
     private String rutaImagen;
     private boolean activo;
 
-    // Constructor con y sin parametros
     public Producto() {
     }
 
@@ -31,4 +29,3 @@ public class Producto implements Serializable {
         this.activo = activo;
     }
 }
-    

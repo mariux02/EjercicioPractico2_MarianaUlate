@@ -20,7 +20,6 @@ public class Pregunta implements Serializable {
     private String respuesta;
     private String nombreUsuario;
 
-    // Constructor con y sin parametros
     public Pregunta() {
     }
 
@@ -29,4 +28,3 @@ public class Pregunta implements Serializable {
         this.respuesta = respuesta;
     }
 }
-    

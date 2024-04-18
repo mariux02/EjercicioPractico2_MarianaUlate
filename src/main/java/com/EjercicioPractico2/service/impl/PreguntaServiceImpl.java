@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class PreguntaServiceImpl implements PreguntaService {
-    
+
     @Autowired
     private PreguntaDao preguntaDao;
 
@@ -20,7 +20,7 @@ public class PreguntaServiceImpl implements PreguntaService {
         var lista=preguntaDao.findAll(); //Se va a guardar en esta lista
         return lista;
     }
-    
+
     @Override
     @Transactional(readOnly = true)
     public Pregunta getPregunta(Pregunta pregunta) {

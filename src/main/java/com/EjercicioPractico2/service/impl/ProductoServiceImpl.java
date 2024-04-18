@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class ProductoServiceImpl implements ProductoService {
-    
+
     @Autowired
     private ProductoDao productoDao;
 
@@ -23,7 +23,7 @@ public class ProductoServiceImpl implements ProductoService {
         }
         return lista;
     }
-    
+
     @Override
     @Transactional(readOnly = true)
     public Producto getProducto(Producto producto) {
@@ -41,5 +41,4 @@ public class ProductoServiceImpl implements ProductoService {
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
-
 }

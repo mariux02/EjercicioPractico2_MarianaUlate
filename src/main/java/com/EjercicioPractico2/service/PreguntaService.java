@@ -7,7 +7,7 @@ public interface PreguntaService {
 
     // Se obtiene un listado de preguntas en un List
     public List<Pregunta> getPreguntas();
-    
+
     // Se obtiene un Pregunta, a partir del id de un pregunta
     public Pregunta getPregunta(Pregunta pregunta);
 
@@ -17,5 +17,5 @@ public interface PreguntaService {
 
     // Se elimina el pregunta que tiene el id pasado por parÃƒÂ¡metro
     public void delete(Pregunta pregunta);
-        
+
 }
